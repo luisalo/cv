@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1554134824 "alonso-ovalle-cv.tex" "alonso-ovalle-cv.pdf" "alonso-ovalle-cv" 1554134824
+["pdflatex"] 1554135375 "alonso-ovalle-cv.tex" "alonso-ovalle-cv.pdf" "alonso-ovalle-cv" 1554135376
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_a253pk.enc" 1544053682 2961 3660634d615819c1e174a9a81b80cd21 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_byuyni.enc" 1544053682 3418 ee856dda3b2cedd3a55f16214a5b183f ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_ld6df2.enc" 1544053682 3348 e65c841208edb43df90a4807555e5614 ""
@@ -97,11 +97,11 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1554128565 3236106 bef0cf154a3167603a4917a99a2c80c5 ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1554128587 4227022 5bcd1b1d7857703fe973f9c3a3a0b8f7 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "alonso-ovalle-cv.aux" 1554134816 662 b2b94621371df8d9296b8bf5bec1b851 ""
-  "alonso-ovalle-cv.out" 1554134815 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "alonso-ovalle-cv.tex" 1554134824 63754 493821287f5cc76e5ded9cac2744c002 ""
+  "alonso-ovalle-cv.aux" 1554135376 662 b2b94621371df8d9296b8bf5bec1b851 ""
+  "alonso-ovalle-cv.out" 1554135376 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "alonso-ovalle-cv.tex" 1554135375 63755 a9498303a2a0a90dcc0a29a4a2c9059b ""
   (generated)
-  "alonso-ovalle-cv.log"
-  "alonso-ovalle-cv.pdf"
-  "alonso-ovalle-cv.out"
   "alonso-ovalle-cv.aux"
+  "alonso-ovalle-cv.out"
+  "alonso-ovalle-cv.pdf"
+  "alonso-ovalle-cv.log"

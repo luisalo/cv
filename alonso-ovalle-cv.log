@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.1)  1 APR 2019 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.1)  1 APR 2019 12:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -709,23 +709,7 @@ LaTeX Font Info:    Font shape `T1/EBGaramond-OsF/m/scit' will be
  [5] [6] [7] [8] [9] [10]
 LaTeX Font Info:    Font shape `T1/EBGaramond-OsF/b/it' will be
 (Font)              scaled to size 10.95pt on input line 600.
-
-./alonso-ovalle-cv.tex:600: Too many }'s.
-l.600 ...bsection*{\hspace{5pt} Papers Delivered}}
-                                                  
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-./alonso-ovalle-cv.tex:607: Undefined control sequence.
-l.607 ...definites'' (with Esmail Moghiseh), \text
-                                                  {Sinn und Bedeutung 23}, C...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[11]
+ [11]
 Overfull \hbox (10.4853pt too wide) in paragraph at lines 630--634
 \T1/EBGaramond-OsF/m/n/10.95 (-20) Menéndez-Benito), \T1/EBGaramond-OsF/m/it/10
 .95 (-20) Con-grés In-ter-na-tional des Lin-guistes 19\T1/EBGaramond-OsF/m/n/10
@@ -791,7 +775,7 @@ garamond/EBGaramond-Italic.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
 public/ebgaramond/EBGaramond-Regular.pfb></usr/local/texlive/2018/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fon
 ts/type1/public/marvosym/marvosym.pfb>
-Output written on alonso-ovalle-cv.pdf (26 pages, 508667 bytes).
+Output written on alonso-ovalle-cv.pdf (26 pages, 508695 bytes).
 PDF statistics:
  164 PDF objects out of 1000 (max. 8388607)
  128 compressed objects within 2 object streams
