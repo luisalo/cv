@@ -1,16 +1,53 @@
-\documentclass[oldfontcommands, article, 11pt, oneside]{memoir}
-\hyphenation{Bar-ce-lo-na, Mo-dal}
-\usepackage{cv}
+
+\documentclass[11pt]{article}
+%\hyphenation{Bar-ce-lo-na}
+% Font settings
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{marvosym}% provides \Letter and \Telefon
+%\usepackage[cmintegrals,cmbraces]{newtxmath}
+\usepackage{ebgaramond-maths}
+
+% Margins
+%\usepackage[margin=1.5in]{geometry}
+
+% Section fonts
+\usepackage{titlesec}
+\titleformat*{\section}{\normalfont\scshape\bfseries\raggedright}
+\titleformat*{\subsection}{\bfseries\raggedright}
+\titleformat*{\subsubsection}{\normalfont\normalsize\bfseries\itshape}
+
+
+% Headers, footers, and page styles
+\usepackage{titleps}
+\newpagestyle{main}[\footnotesize]{%
+  \headrule
+  \sethead[Curriculum Vit\ae][][Luis Alonso-Ovalle]
+          {Curriculum Vit\ae}{}{Luis Alonso-Ovalle}
+            \setfoot{}{}{\scriptsize Updated \today}
+}
+\newpagestyle{first}[\footnotesize]{%
+  \sethead{}{}{}
+  \setfoot{}{}{\scriptsize \today}
+}
+\pagestyle{main}
+
+
+%% links
+\usepackage{color}
+\definecolor{RoyalBlue}{cmyk}{1.,0.50,0,0}
+%\usepackage{gb4e}
+\usepackage[colorlinks=true,breaklinks=true linkcolor=RoyalBlue, citecolor=RoyalBlue, urlcolor=RoyalBlue]{hyperref}
+
+
 \usepackage{multicol}
-%\usepackage{garamond}
-%\usepackage[osf]{libertine}% Linux Libertine font, with old-style figures
-\usepackage[scaled=.95,osfI,swashQ]{garamondx}% scaled to 90%, my oldstyle
-\usepackage[supstfm=NewG8-sups]{superiors}
-\usepackage{marvosym}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}%\nonzeroparskip
  %\usepackage[colorlinks=true, breaklinks=true linkcolor=RoyalBlue, citecolor=RoyalBlue, urlcolor=RoyalBlue]{hyperref}
 \usepackage{array}
+
+
 \begin{document}
 %\garamond
 \markright{}
@@ -23,23 +60,22 @@
 
 \vspace{.8cm}
 
-\chapter*{Contact Information}
+\section*{Contact Information}
 \begin{multicols}{2}
 Department of Linguistics\\
 1085 Dr. Penfield\\
-Montr\'eal, Qu\'ebec, Canada, H3A 1A7\\
-\Telefon \hspace{2pt} (001)$\cdot$514$\cdot$398$\cdot$4353
+Montr\'eal, Qu\'ebec, Canada, \textsc{h3a 1a7}\\
+\Telefon \hspace{2pt} \href{tel:0015143984353}{(001)$\cdot$514$\cdot$398$\cdot$4353}
 \\
 \hspace{1pt} \FAX \hspace{1pt} (001)$\cdot$514$\cdot$398$\cdot$7088
 (non-confidential) \\
 \end{multicols}
 \vspace{-12pt}
-\Letter \hspace{3pt}  luis.alonso-ovalle@mcgill.ca\\
+\Letter \hspace{3pt}  \href{mailto:luis.alonso-ovalle@mcgill.ca}{luis.alonso-ovalle@mcgill.ca}\\
 \ComputerMouse \hspace{6pt}
-http://people.linguistics.mcgill.ca/$\sim$luis.alonso-ovalle/index.html
+\href{http://people.linguistics.mcgill.ca/~luis.alonso-ovalle/}{http://people.linguistics.mcgill.ca/$\sim$luis.alonso-ovalle/}
 
-
-\chapter*{Education}
+\section*{Education}
 
 \begin{tabular}{p{2.815cm}p{280pt}}
 Ph.D., 2006 &  Linguistics, University of Massachusetts at Amherst\\
@@ -57,7 +93,8 @@ M.A., 2001   & Hispanic Linguistics, University of Massachusetts at Amherst\\
  %& & {\footnotesize First Class Honors (`Clar\'in Award')}\\
 \end{tabular}
 
-\chapter*{Professional Experience}
+\section*{Professional Experience}
+
 \begin{tabular}{p{2.815cm}p{280pt}}
 August 2016 -- & Associate Professor and Chair\\
  & Department of Linguistics\\
@@ -130,9 +167,9 @@ Fellow\\
 
 
 
-\chapter*{SCHOLARSHIP}
+\section*{Research}
 
-\section*{\large{\textbf{Grants}}}
+\subsection*{Grants}
 
 \textit{Principal Investigator:}
 
@@ -183,7 +220,7 @@ Joseph P. Healey Grant Program (AY 2008-2009), Office of the
 Joseph P. Healey Grant Program (AY 2007-2009), Office of the Vice Provost for Research, University of Massachusetts Boston: ``The Place of Spanish Indefinites within a Typology of Epistemic Indefinite Noun Phrases'', \$3,890.
 
 
-\section*{\large{\textbf{Journal Articles}}}
+\subsection*{Journal Articles}
 
 Alonso-Ovalle, Luis \textit{\&} Paula Men\'endez-Benito. 2018. Projecting Possibilities in the Nominal Domain. Spanish \textit{Uno Cualquiera}, \textit{Journal of Semantics}. 35:1, 1-41.
 
@@ -247,7 +284,7 @@ Alonso-Ovalle, Luis. 2000. Aspectos gnoseol\'ogicos de la ling\"u\'istica de Cue
 
 % \end{revnumerate}
 
-\section*{\large{\textbf{Book Chapters}}} 
+\subsection*{Book chapters} 
 % \renewcommand{\labelenumi}{{A}\theenumi.}
 % \renewcommand{\theenumii}{\roman{\enumii}}
 % \begin{revnumerate}
@@ -302,8 +339,8 @@ Alonso-Ovalle, Luis. 2000. Is the `Arbitrary Interpretation' a Semantic Epipheno
 
 % \end{revnumerate}
 
-\section*{\large{\textbf{Papers Presented at Conferences and Published
-      in Proceedings}}}
+\subsection*{Papers Presented at Conferences and Published
+      in Proceedings}
       
       
  Royer, Justin, and Luis Alonso-Ovalle. 2019. Randon Choice Modality in Chuj: The Case of \textit{Komon}. \textit{Proceedings of Form and Analysis in Mayan Linguistics 5 (FAMLi 5)}, ed. by Ryan Bennett, Robert Henderson, Pedro Mateo Pedro, and Megan Harve, \href{https://escholarship.org/uc/item/5587h7df}{https://escholarship.org/uc/item/5587h7df}
@@ -425,7 +462,7 @@ Alonso-Ovalle, Luis \textit{\&} Paula Men\'endez-Benito. 2002. Two Types of Weak
 
 % \end{revnumerate}
 
-\section*{\large\textbf{Book Reviews}}
+\subsection*{Book Reviews}
 % \renewcommand{\labelenumi}{{B}\theenumi.}
 % \renewcommand{\theenumii}{\roman{\enumii}}
 % \begin{revnumerate}
@@ -465,14 +502,14 @@ Alonso-Ovalle, Luis. 2000. ``{\it Formal Perspectives on Romance Linguistics.} E
 %  \item {\it Formal Perspectives on Romance Linguistics.} Ed. by J.M. Authier \textit{et al}. Amsterdam: John Benjamins, 1999. In {\it Language}, 76,4, p. 941.
 %  \end{revnumerate}
 
-\section*{\large{\textbf{Edited Volumes}}}
+\subsection*{Edited Volumes}
 
 Alonso-Ovalle, Luis \& Paula Men\'endez-Benito. (eds.) (2015) \emph{Epistemic Indefinites. Exploring Modality beyond the Verbal Domain}, Oxford University Press.
 
 Alonso-Ovalle, Luis. (ed.) 2003. \emph{On Semantic Processing, University of Massachusetts Occasional Papers in Linguistics, vol 27}. University of Massachusetts, Amherst, MA: Graduate Linguistic Student Association.
 
 
-\section*{\textbf{\large{Invited Talks}}}
+\subsection*{Invited Talks}
 
 April 2017. ``Against the Odds. On the Modal Component of the Ability/Involuntary Action Verbal Inflection in Tagalog'', (with Henrison Hsieh), Tenth Toronto-Montr\'eal-Ottawa Semantics Workshop, University of
 Toronto, April 22, 2017.
@@ -552,15 +589,15 @@ January 2005. ``On the Semantics of \textit{O} and \textit{Alg\'un}'', Departmen
 December 2004.``Equal Rights for Every Disjunct! Quantification over Alternatives or Pointwise Context Change'', New York University Syntax/Semantics Lecture Series, Department of Linguistics, New York University.
 
 
-\section*{\textbf{\large{Invited Commentaries}}}
+\subsection*{Invited Commentaries}
 
 ``Do Scalar Alternatives Provide Enough Truthmakers? (A Note on Santorio, Paolo (2015) ``Alternatives and Truthmakers in Conditional Semantics'' ), Invited commentary delivered at the 90th Annual Meeting of the American Philosophical Association Pacific Division. San Francisco, CA, March 31 2016. 
 
 
-\section*{\textbf{\large{Conference Presentations}}}
+\subsection*{Conference Presentations}
 
 
-\subsection*{\hspace{5pt}\large{\textbf{Papers Delivered}}}
+\subsubsection*{\hspace{5pt} Papers Delivered}}
 
 December 2018, ``Number Inflection, Spanish Bare Interrogatives, and Higher-Order Quantification'' (with Vincent Rouillard), \textit{Going Romance}, University of Utrecht, December 12, 2018 [presented by co-author.]
 
@@ -666,8 +703,11 @@ October 2002. ``Two Types of Indefinites'' (with Paula Men\'endez-Benito), \text
 1998. ``Infinitivos, adjunciones y marcado casual'', \textit{48th Mountain Interstate Foreign Language Conference}, Virginia Tech, Roanoke, VA.
 
 1998. ``Cuervo en el panorama ling\"{u}\'istico europeo de fin de siglo'', \textit{51st Annual Kentucky Foreign Language Conference}, University of Kentucky, Lexington, KY.
-\partial
-\subsection*{\hspace{5pt}\large{\textbf{Poster Presentations}}}
+%\partial
+
+\subsubsection*{\hspace{5pt} Poster Presentations}
+
+October 2018. Luis Alonso-Ovalle and Esmail Moghiseh, ``Neutralizing Free Choice items via domain restriction: Farsi \textit{-i} indefinites'', \textit{12th Toronto-Ottawa-Montreal Workshop in Semantics}, Narch 30, 2019, Concordia University, Montreal.
 
 August 2018. Justin Royer and Luis Alonso-Ovalle, ``La expresi\'on de la modalidad de decisi\'on arbitraria en Chuj'', \textit{Form and Analysis in Mayan Linguistics 5}, August 10-11, 2018, Antigua. Guatemala, Centro de Formaci\'on de la Cooperaci\'on Espa\~nola en Antigua, Guatemala [presented by co-author.]
 
@@ -720,11 +760,11 @@ April 2001. ``Double Negation, Metalinguistic Negation and Negative
 Concord'' (with Elena Guerzoni), \textit{37th Meeting of the Chicago
   Linguistics Society}, University of Chicago.  
 
-\chapter*{TEACHING}
+\section*{Teaching}
 
-\section*{\textbf{\large{McGill University (2011-)}}}
+\subsection*{McGill University (2011-)}
 
-\subsection*{Undergraduate level}
+\subsubsection*{Undergraduate level}
 \textsc{Ling} 565: Pragmatics (Winter 2017, Winter 2019.)
 
 \textsc{Hisp} 501: History of the Spanish Language (Fall 2011; Fall 2015 (taught as \textsc{Hisp} 505, Seminar in Hispanic Studies.))
@@ -744,7 +784,7 @@ section), (Winter 2013.)
 
 
 
-\subsection*{Graduate level}
+\subsubsection*{Graduate level}
 
 \textsc{Ling} 665: Semantics 4 (Winter 2012, Winter 2014, Winter 2018 (meets together with
 Ling 765).)
@@ -754,12 +794,12 @@ Ling 765).)
 LLCU 610: Fundamentals of Linguistics for Language Teaching (Winter 2013.)
 
 
-\subsection*{\textbf{Doctoral Students}}
+\subsubsection*{Doctoral Students}
 
 
-\subsection*{\hspace{5pt} \textbf{A.1. PhD Dissertations}}
+\subsubsection*{\hspace{5pt} A.1. PhD Dissertations}
 
-\subsection*{\hspace{15pt}\textbf{Co-Supervisor}}
+\subsubsection*{\hspace{15pt} Co-Supervisor}
 
 Francesco Gentile, ``Non-Local Modification'', (Co-supervised with Bernhard Schwarz and Junko Shimoyama) (In progress)
 
@@ -773,7 +813,7 @@ Jozina van der Klok, ``Tense and Aspect Markers in Javanese'',
 
 \vspace{-10pt}
 
-\subsection*{\hspace{15pt}\textbf{Committee Member}}
+\subsubsection*{\hspace{15pt}Committee Member}
 
 Alanah McKillen, ``On the interpretation of reflexive pronouns'', (Succesfully defended March 2016).
 
@@ -784,9 +824,9 @@ Alexandra Simonenko, ``Grammatical Ingredients of Definiteness''
 \vspace{-10pt}
 
 
-\subsection*{\hspace{5pt}\textbf{A.2. Evaluation Papers}}
+\subsection*{\hspace{5pt} A.2. Evaluation Papers}
 
-\subsection*{\hspace{15pt}\textbf{(Co-)Supervisor}}
+\subsubsection*{\hspace{15pt} (Co-)Supervisor}
 
 Christopher Bruno, ``Contrastive negation and Presuppositional Alternatives'' (Co-supervised with Bernhard Schwarz, successfully defended May 2017.)
 
@@ -814,7 +854,7 @@ Marzieh Mortazavinia, ``\textit{Even} and \textit{Only}''
 2013. )
 
 
-\subsection*{\hspace{15pt}\textbf{Committee Member}}
+\subsubsection*{\hspace{15pt} Committee Member}
 
 
 Francesco Gentile,  ``Adjectives as reduced relative clauses. The case of Italian prenominal and postnominal adjectives.'' (Co-supervised with Junko Shimoyama) (Successfully defended June 2017.)
@@ -823,30 +863,30 @@ Daniel Goodhue, ``The Contradiction Contour and Questions''
 (Co-supervised with Michael Wagner and Bernhard Schwarz) (Successfully
 defended May 2014).
 
-\subsection*{\hspace{15pt}\textbf{External Examiner}}
+\subsubsection*{\hspace{15pt} External Examiner}
 
 Ph.\ D evaluation paper examiner: Brandon J. Fry, ``The semantics of attitude ascription: a literature review and a proposal for a study of Ojibwe cross-clausal agreement'', University of Ottawa.
 
-\subsection*{\textbf{Postdoctoral Supervision}}
+\subsubsection*{Postdoctoral Supervision}
 
 Aron Hirsch, September 2017 -- , SSHRC postdoctoral fellow (co-supervised with Bernhard Schwarz and Michael Wagner.)
 
-\subsection*{\textbf{MA Theses}}
+\subsubsection*{MA Theses}
 
-\subsection*{\hspace{15pt}\textbf{Supervisor}}
+\subsubsection*{\hspace{15pt} Supervisor}
 
 Esmail Moghiseh, ``Free Choice Items in Farsi'' (in progress)
 
 
-\subsection*{\hspace{15pt}\textbf{Co-Supervisor}}
+\subsubsection*{\hspace{15pt} Co-Supervisor}
 
 Justin Borga, ``Topics on sluicing'', (Co-supervised with Aron Hirsch and Bernhard Schwarz.)
 
-\subsection*{\textbf{Undergraduate Honors Theses (Supervisor)}}
+\subsubsection*{Undergraduate Honors Theses (Supervisor)}
 
 Esmail Moghiseh, 2018. ``Contradiction free strengthening and exhaustification: Persian -\textit{I} indefinites'.' 
 
-\section*{\textbf{\large{University of Massachusetts Boston (2006-2011)}}}
+\subsection*{University of Massachusetts Boston (2006-2011)}
 
 
 Span 412: Spanish Semantics (Fall 2008, Fall 2010).
@@ -873,7 +913,7 @@ Span 102: Elementary Spanish II,  three sections (Fall 2006, Spring
 
 Span 101: Elementary Spanish I, one section (Fall 2007).	
 
- \subsection*{\hspace{5pt}\textbf{Honor Theses Directed at UMass Boston}}
+ \subsubsection*{\hspace{5pt} Honor Theses Directed at UMass Boston}
 
  Melodie Reynolds, ``Negative Concord and
 Spanish Yes/No Questions with Preposed Negation'', (two semesters (6
@@ -895,16 +935,16 @@ credits), successfully deffended Spring 2011).
 % \item 2007. External Member of Aaron Braver's Senior Honor Thesis (``An Account of N-Drop. Empirical Evidence and Analysis''), Brandeis University.
 % \end{itemize}
 
-\section*{\textbf{\large{M.I.T} (Fall 2005)}}
+\subsection*{ M.I.T (Fall 2005)}
 
 \textsc{24.970}, Introduction to Semantics, with Prof.\ Kai von
 Fintel. Level: graduate. Duties also include teaching and developing
 the semantics section of 24.992, Survey of General Linguistics
 (graduate level).
 
-\section*{\textbf{University of Massachusetts Amherst (1997-- 2006)}}
+\subsection*{University of Massachusetts Amherst (1997-- 2006)}
 
-\subsection*{\hspace{5pt}\textbf{A. Department of Linguistics}}
+\subsubsection*{\hspace{5pt} A. Department of Linguistics}
 
 \textsc{Ling 510:} Introduction to Semantics. Spring 2004. Level:
 senior-level undergraduate course. Teaching Assistant to Prof.\
@@ -914,7 +954,7 @@ Angelika Kratzer. Duties included preparing and teaching a weekly 50 min. hands-
 2003. Level: senior-level undergraduate course. Teaching Assistant to
 Prof.\ Barbara H. Partee. Duties included grading, preparing and teaching several sections of the course. 
 
-\subsection{\hspace{5pt}\textbf{B. Department of Spanish and Portuguese}}
+\subsubsection*{\hspace{5pt} B. Department of Spanish and Portuguese}
 
 \textsc{span 470}: Introduction to Hispanic Linguistics.
 
@@ -935,13 +975,13 @@ Prof.\ Barbara H. Partee. Duties included grading, preparing and teaching severa
  Intermediate level), designing full structure of the course,
  including syllabus, teaching materials and evaluation of students.
 
-\subsection{\textbf{Previous Experience}}
+\subsection*{\textbf{Previous Experience}}
 Fall 1999, Teaching Assistant, Spanish Department, Amherst College.
 
 Summer 1996,  Institute for the Cooperation with Latin America Fellow,  Spanish Foreign Office. Duties included teaching two seminars on Structuralist Approaches to the Syntax of Spanish at the National University, C\'ordoba (Argentina).
 
 
-\section*{\large{\textbf{Talks on Teaching}}}
+\subsection*{Talks on Teaching}
 
 
 2007. ``Enhancing Communication with Voice and Video Chat'' (with Susan Mraz), \textit{Educational Technology Conference}, University of Massachusetts Boston.
@@ -950,12 +990,11 @@ Summer 1996,  Institute for the Cooperation with Latin America Fellow,  Spanish 
 
 1999. ``Ciencias, t\'ecnicas y tecnolog\'ias: acerca del lugar de la gram\'atica en el paradigma comunicativo'', \textit{52nd Kentucky Foreign Language Conference}, University of Kentucky, Lexington, KY.
 
-\chapter*{SERVICE}
+\section*{Service}
 
-\section*{\textbf{\large{McGill University (2011 -)}}}
+\subsection*{McGill University (2011 -)}
 
-
-\subsection*{\hspace{5pt}\textbf{\large{Service to the University}}}
+\subsubsection*{\hspace{5pt} Service to the University}
 
 Strategic Planning Committee, Faculty of Arts (Fall 2018 - )
 
@@ -986,9 +1025,9 @@ Served as a pro-dean in the following dissertation defenses:
 
 \end{itemize}
 
-\subsection*{\hspace{5pt}\textbf{\large{Service to the Department}}}
+\subsection*{\hspace{5pt} Service to the Department}
 
-\subsection*{\hspace{10pt}\textbf{\large{Linguistics}}}
+\subsubsection*{\hspace{10pt} Linguistics}
 
 Chair, August 2016 --
 
@@ -1058,7 +1097,7 @@ Oral Defense Committee member: Sepideh Mortazavinia, ``Second Language Acquisiti
 
 \vspace{-10pt}
 
-\subsection*{\hspace{10pt}\textbf{\large{{Languages, Literatures and Cultures}}}}
+\subsubsection*{\hspace{10pt} Languages, Literatures and Cultures}
 
  Admissions (annual).
 
@@ -1066,9 +1105,9 @@ Job Search Committee, Faculty Lecturer, Italian, Winter 2012.
 %May 2012.
 
 
-\section*{\textbf{\large{University of Massachusetts Boston (2006-2011)}}}
+\subsection*{University of Massachusetts Boston (2006-2011)}
 
-\subsection*{\hspace{10pt}\textbf{\large{Service to the University}}}
+\subsubsection*{\hspace{10pt} Service to the University}
 
 Spring 2010. Faculty Development Implementation Committee.
 
@@ -1082,13 +1121,13 @@ Spring 2009. Intermediate Seminar Portfolio Review, Seminar Assessment Committee
 Spring 2007, Winter 2008, Spring 2008, Winter 2009. Writing Proficiency Requirement Grader.
 
 
-\subsection*{\hspace{10pt}\textbf{\large{Service to the College of Liberal Arts}}}
+\subsubsection*{\hspace{10pt}Service to the College of Liberal Arts}
 
 Fall 2007 -- Spring 2009. College of Liberal Arts Senate.
 
 Fall 2008 -- Spring 2009. College of Liberal Arts Senate Executive Committee.
 
-\subsection*{\hspace{10pt}\textbf{\large{Service to the Department}}}
+\subsubsection*{ Service to the Department}
 
 Fall 2008.  Department Personnel Committee.
 
@@ -1097,16 +1136,16 @@ career orientation meetings.
 
 Departmental webmaster.
 
-\section*{\large{\textbf{Service to the Profession}}}
+\subsection*{Service to the Profession}
 
 
-\subsection{\hspace{10pt}\textbf{\large{Editorship}}}
+\subsubsection*{\hspace{10pt}Editorship}
 
 Editor:\\  \textit{Language and Linguistics Compass}, Semantics and Pragmatics Section, (2016 --)
 
 Editorial board member: \\ \textit{Semantics and Pragmatics} (2011 -- ), \textit{Journal of Semantics} (2015 -- ), \textit{Probus. An International Journal of Romance Linguistics} (2016 --).
 
-\subsection{\hspace{10pt}\textbf{\large{Reviewing}}}
+\subsubsection*{\hspace{10pt} Reviewing}
 
 Ad-hoc reviewer for articles in the following journals:
 
@@ -1139,16 +1178,16 @@ proposals; Spring 2010: one book
 proposal; Spring 2011: one book proposal; Winter 2012: one book
 proposal; Fall 2012: one book proposal; Fall 2015: one book proposal; Winter 2016: one book proposal)
 
-Reviewed chapter manuscripts for edited volumes: 
+Reviewed section manuscripts for edited volumes: 
 \begin{itemize}
 \item[] \textit{Semantics Companion}, Wiley, edited by Lisa Matthewson \textit{et al.}
-\item[] \textit{Handbook on Information Structure} (ed. by Caroline F\'try and Shin Ishihare) (1 chapter, 2014).
-\item[] \textit{Modality across Syntactic Categories} (ed. by Mar\'ia Luisa Rivero, Ana Arregui and Andr\'es Salanova), 1 chapter.
+\item[] \textit{Handbook on Information Structure} (ed. by Caroline F\'try and Shin Ishihare) (1 section, 2014).
+\item[] \textit{Modality across Syntactic Categories} (ed. by Mar\'ia Luisa Rivero, Ana Arregui and Andr\'es Salanova), 1 section.
 \item[] \textit{Alternatives in Semantics} (ed. by Anamaria Falaus) (2
-  chapters, 2011).
+  sections, 2011).
 \item[] \textit{Proceedings of the 41th Linguistic Symposium on
     Romance Languages} (ed. by Eric Mathieu \textit{et al.}, 1
-  chapter, 2011).
+  section, 2011).
 \end{itemize}
 
 Grant proposal reviewer for NSF (one proposal, 2011), Israel Science Foundation (one grant proposal, 2016), Leibniz Association.
@@ -1169,7 +1208,7 @@ Abstract reviewer for the following conferences:
 External examiner, pre-tenure formal review, Department of Linguistics, the University of Utah.
 
 
-\section*{\large{\textbf{Outreach}}}
+\subsection*{Outreach}
 
 
 September 25 2010: ``Variedades del espa\~nol americano''. Eight-hour
@@ -1185,7 +1224,7 @@ Participated in the organization of the 2012 and 2013 editions of the North
 American Computational Linguistics Olympiad (NACLO) at McGill.
 
 
-\chapter*{Honors and Awards} 
+\subsection*{Honors and Awards} 
 
 University Fellowship, University of Massachusetts, Amherst (Fall
  2004 -- Spring 2005).
@@ -1204,7 +1243,7 @@ in 1998).
 `Clar\'in Award' (class 1992). (Awarded in 1997) (highest grade average among majors in Classics, Modern Languages and Philology).
 
 
-% \chapter*{References}
+% \section*{References}
 
 % \begin{tabular}{l}
 % Prof. Angelika Kratzer \\
@@ -1254,7 +1293,7 @@ in 1998).
 
 
 
-{\hspace*{\fill}\footnotesize Updated: \today}
+%{\hspace*{\fill}\footnotesize Updated: \today}
 
 
 \end{document} 
