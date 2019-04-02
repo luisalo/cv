@@ -7,15 +7,15 @@
 \usepackage{microtype}
 \usepackage{marvosym}% provides \Letter and \Telefon
 %\usepackage[cmintegrals,cmbraces]{newtxmath}
-\usepackage{ebgaramond-maths}
+\usepackage[osf]{ebgaramond}
 
 % Margins
 %\usepackage[margin=1.5in]{geometry}
 
 % Section fonts
 \usepackage{titlesec}
-\titleformat*{\section}{\normalfont\scshape\bfseries\raggedright}
-\titleformat*{\subsection}{\bfseries\raggedright}
+\titleformat*{\section}{\large\scshape\bfseries\raggedright}
+\titleformat*{\subsection}{\scshape\raggedright}
 \titleformat*{\subsubsection}{\normalfont\normalsize\bfseries\itshape}
 
 
@@ -32,6 +32,14 @@
   \setfoot{}{}{\scriptsize \today}
 }
 \pagestyle{main}
+
+\titlespacing*{\section}
+{0pt}{10pt}{5pt}
+\titlespacing*{\subsection}
+{0pt}{10pt}{0pt}
+\titlespacing*{\subsubsection}
+{0pt}{20pt}{0pt}
+
 
 
 %% links
@@ -58,7 +66,7 @@
 {\LARGE Luis Alonso-Ovalle}
 \end{center}
 
-\vspace{.8cm}
+\vspace{.4cm}
 
 \section*{Contact Information}
 \begin{multicols}{2}
