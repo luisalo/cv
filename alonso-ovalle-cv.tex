@@ -2,6 +2,8 @@
 \documentclass[11pt]{article}
 %\hyphenation{Bar-ce-lo-na}
 % Font settings
+\usepackage{graphics}
+
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
@@ -57,6 +59,8 @@
 \setlength{\parskip}{6pt}%\nonzeroparskip
  %\usepackage[colorlinks=true, breaklinks=true linkcolor=RoyalBlue, citecolor=RoyalBlue, urlcolor=RoyalBlue]{hyperref}
 \usepackage{array}
+\newcolumntype{F}{>{\footnotesize}l} % define a new column type for \tiny
+
 
 
 \begin{document}
@@ -70,6 +74,7 @@
 \end{center}
 
 \vspace{.4cm}
+
 
 \section*{Contact Information}
 \begin{multicols}{2}
@@ -85,6 +90,8 @@ Montr\'eal, Qu\'ebec, Canada, \textsc{h3a 1a7}\\
 \Letter \hspace{3pt}  \href{mailto:luis.alonso-ovalle@mcgill.ca}{luis.alonso-ovalle@mcgill.ca}\\
 \ComputerMouse \hspace{6pt}
 \href{http://people.linguistics.mcgill.ca/~luis.alonso-ovalle/}{http://people.linguistics.mcgill.ca/$\sim$luis.alonso-ovalle/}
+
+
 
 \section*{Education}
 
@@ -107,68 +114,78 @@ M.A., 2001   & Hispanic Linguistics, University of Massachusetts at Amherst\\
 \section*{Professional Experience}
 
 \begin{tabular}{p{2.815cm}p{280pt}}
-June 2023 -- & Full Professor, Department of Linguistics\\
- &McGill University\\
+06/2023 -- & Full Professor, Department of Linguistics, McGill University\\
   & \\[-8pt]
-August 2016 -- &  Chair, Department of Linguistics\\
- May 2022 &McGill University\\
+08/2016 -- 05/2022 &  Chair, Department of Linguistics, McGill University\\
  & \\[-8pt]
-August 2015 -- & Associate Professor, Department of Linguistics\\
- May 2023& McGill University\\
+08/2015 -- 05/ 2023& Associate Professor, Department of Linguistics, McGill University\\
   & \\[-8pt]
-June 2014 -- &  Associate Professor\\
-July 2015 & Department of Linguistics and Department of Languages, Literatures, and Cultures\\ 
-& McGill University\\
+06/2014 -- 07/2015&  Associate Professor, Department of Linguistics and Department of Languages, Literatures, and Cultures, McGill University\\
 & \\[-8pt]
-August 2011 -- &  Assistant Professor\\
-May 2014& Department of Linguistics and Department of Languages, Literatures, and Cultures\\ 
-& McGill University\\
+08/2011 -- 05/2014&  Assistant Professor, Department of Linguistics and Department of Languages, Literatures, and Cultures, McGill University\\
 & \\[-8pt]
 \end{tabular}
 \begin{tabular}{p{2.815cm}p{280pt}}
-Sept. 2006 -- & Assistant Professor\\
-May 2011&   Department of
-Hispanic Studies\\
-&  University of Massachusetts, Boston\\
+09/2006 -- 08/ 2011& Assistant Professor, Department of
+Hispanic Studies, University of Massachusetts, Boston\\
  &  \footnotesize{[Spring 2010: parental leave.]}\\
 & \\[-8pt]
-Fall 2005 & Lecturer \\
-& Department of Linguistics and Philosophy \\ 
-& Massachusetts Institute of Technology\\
+09/2005 -- 12/2005 & Lecturer, Department of Linguistics and Philosophy, Massachusetts Institute of Technology\\
 & \\[-8pt]
 \end{tabular}
+
+
+
 \begin{tabular}{p{2.815cm}p{280pt}}
-Fall 2003 -- & Teaching Assistant\\
- Spring 2004&  Department of
-Linguistics\\
-& University of Massachusetts at Amherst\\ 
-& \\[-9pt]
+09/2003 --  05/2004 & Teaching Assistant, Dept.\ of
+Linguistics, University of Massachusetts at Amherst\\ 
+%& \\[-8pt]
 % Department of Linguistics, University of Massachusetts, Amherst. 
 % \textsc{Ling 510:} Introduction to Semantics. Level: senior-level undergraduate course. Duties included preparing and teaching a weekly 50 min. hands-on session, supervising students and grading.
-Spring 2001 -- & Research Assistant\\
- Fall 2003 &  Department of Linguistics and Department of Psychology\\
-&  University of Massachusetts at Amherst\\
- & \\[-8pt]
-1997 --&  Teaching Associate\\
- 2000 &  Department of Spanish and Portuguese\\
-&  University of Massachusetts at Amherst\\
-&  \\[-8pt]
+05/2001 -- 12/2003& Research Assistant, Department of Linguistics and Department of Psychology,  University of Massachusetts at Amherst\\
+% & \\[-8pt]
+09/1997 -- 05/2000 &  Teaching Associate, Department of Spanish and Portuguese, University of Massachusetts at Amherst\\
+%&  \\[-8pt]
 % Full responsibility for all aspects of the following courses, including student evaluation: \textsc{span 470}: Introduction to Hispanic Linguistics; \textsc{span 378}: Spanish Phonetics; \textsc{span 311}: Advanced Grammar, \textsc{span 240}: Spanish for General Purposes, Advanced Intermediate level; \textsc{span 120}:  Spanish for General Purposes, Beginners; \textsc{span 110}: Spanish for General Purposes, Beginners.
- 1998 -- & Coordinator, Advanced Intermediate Level
- Language  Program\\
- 2000& Department of Spanish and Portuguese \\
- &  University of Massachusetts at Amherst\\
- &  \\[-8pt]
+ 09/1998 -- 05/2000 & Coordinator, Advanced Intermediate Level
+ Language  Program, Dept. of Spanish and Portuguese, University of Massachusetts at Amherst\\
+ %&  \\[-8pt]
 % Duties included coordinating Teaching Associates in charge of \textsc{span} 240 (Spanish for General Purposes, Advanced Intermediate level), designing full structure of the course, including syllabus, teaching materials and evaluation of students.
-Fall 1999 & Teaching Assistant\\
- & Spanish Department, Amherst
+09/1999 ---12/1999 & Teaching Assistant, Spanish Department, Amherst
 College\\
- & \\[-8pt]
+%& \\[-8pt]
 Summer 1996  & Institute for the Cooperation with Latin America
-Fellow\\
- & Ministry of Foreign Affairs, Spain\\
+Fellowship, Ministry of Foreign Affairs, Spain\\
 \end{tabular}
 
+
+% \subsection*{Previous:}
+
+% {
+% \footnotesize
+
+% \begin{tabular}{p{2.815cm}p{280pt}}
+% Fall 2003 --  Spring 2004 & Teaching Assistant, Dept.\ of
+% Linguistics, University of Massachusetts at Amherst\\ 
+% %& \\[-8pt]
+% % Department of Linguistics, University of Massachusetts, Amherst. 
+% % \textsc{Ling 510:} Introduction to Semantics. Level: senior-level undergraduate course. Duties included preparing and teaching a weekly 50 min. hands-on session, supervising students and grading.
+% Spring 2001 -- Fall 2003& Research Assistant, Department of Linguistics and Department of Psychology,  University of Massachusetts at Amherst\\
+% % & \\[-8pt]
+% 1997 -- 2000 &  Teaching Associate, Department of Spanish and Portuguese, University of Massachusetts at Amherst\\
+% %&  \\[-8pt]
+% % Full responsibility for all aspects of the following courses, including student evaluation: \textsc{span 470}: Introduction to Hispanic Linguistics; \textsc{span 378}: Spanish Phonetics; \textsc{span 311}: Advanced Grammar, \textsc{span 240}: Spanish for General Purposes, Advanced Intermediate level; \textsc{span 120}:  Spanish for General Purposes, Beginners; \textsc{span 110}: Spanish for General Purposes, Beginners.
+%  1998 -- 2000 & Coordinator, Advanced Intermediate Level
+%  Language  Program, Dept. of Spanish and Portuguese, University of Massachusetts at Amherst\\
+%  %&  \\[-8pt]
+% % Duties included coordinating Teaching Associates in charge of \textsc{span} 240 (Spanish for General Purposes, Advanced Intermediate level), designing full structure of the course, including syllabus, teaching materials and evaluation of students.
+% Fall 1999 & Teaching Assistant, Spanish Department, Amherst
+% College\\
+% %& \\[-8pt]
+% Summer 1996  & Institute for the Cooperation with Latin America
+% Fellowship, Ministry of Foreign Affairs, Spain\\
+% \end{tabular}
+% }
 
 
 \section*{Research}
@@ -210,7 +227,7 @@ Travis, PI).
 Principal Applicant: Social Sciences and Humanities Research Council
 of Canada, Connection Grant, \textit{Exploring the Interfaces:
   Implicatures, Alternatives and the Semantics/Pragmatics Interface}
-(611-2012-0232), \$16,342. (Funding for a three-day international workshop.)
+(611-2012-0232), \$16,342. %(Funding for a three-day international workshop.)
 
 
 %Department of Hispanic Studies, travel grants: summer 2007 \$800,
